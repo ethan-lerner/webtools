@@ -16,7 +16,7 @@ body {
 
 header {
     background-color: #a33af2;
-    padding: .5rem;
+    padding: 1rem;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
@@ -25,42 +25,43 @@ header {
 
 h1 {
     color: #F6ECFE;
+    font-size: 3rem;
 }
 
-h2 {
+h2, h3, h4, h5, h6{
     color: #210934;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 150%;
     font-variant: small-caps;
     letter-spacing: .1em;
+} 
+
+h2 {
+    font-size: 2rem;
 }
 
 h3 {
-    color: #210934;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 125%;
-    font-variant: small-caps;
-    letter-spacing: .1em;
+    font-size: 1.75rem;
 }
 
-h4,
-h5,
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
 h6 {
-    color: #210934;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-variant: small-caps;
+    font-size: 1.125rem;
 }
 
 p {
     color: #210934;
     line-height: 1.5rem;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 ul {
