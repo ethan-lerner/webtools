@@ -21,6 +21,7 @@ header {
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
     letter-spacing: .75em;
+    line-height: 3rem;
 }
 
 h1 {
@@ -117,4 +118,9 @@ footer {
 
 ul {
     list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
