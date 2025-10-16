@@ -1,5 +1,6 @@
 /*
 #F6ECFE very light
+#F4E7FD not quite as light but still very light
 #A33AF2 fuschia
 #700CBC violet
 #36065B dark purple
@@ -15,13 +16,9 @@ body {
 }
 
 header {
-    background-color: #a33af2;
-    padding: 1rem;
-    text-align: center;
+    background-color: #700CBC;
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
-    letter-spacing: .75em;
-    line-height: 3rem;
 }
 
 h1 {
@@ -29,14 +26,18 @@ h1 {
     font-size: 3rem;
 }
 
-h2, h3, h4, h5, h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #210934;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-family: 'Times New Roman', Times, serif;
     font-variant: small-caps;
     letter-spacing: .1em;
-} 
+}
 
 h2 {
     font-size: 2rem;
@@ -70,34 +71,6 @@ ul {
     line-height: 1.5rem;
 }
 
-main {
-    padding: 1rem;
-    max-width: 55%;
-    margin: auto;
-}
-
-.nav-link:link,
-.nav-link:visited {
-    color: #210934;
-}
-
-.nav-link:hover,
-.nav-link:active {
-    color: #700CBC;
-    font-weight: bolder;
-}
-
-.nav-bar:link,
-.nav-bar:visited {
-    color: #210934;
-}
-
-.nav-bar:hover,
-.nav-bar:active {
-    color: #700CBC;
-    font-weight: bolder;
-}
-
 footer a:link,
 footer a:visited {
     color: #F6ECFE;
@@ -123,4 +96,30 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.nav-bar {
+    color: #F6ECFE;
+}
+
+.nav-bar a:link,
+.nav-bar a:visited {
+    color: #F6ECFE;
+}
+
+.nav-bar a:hover,
+.nav-bar a:active {
+    color: #F6ECFE;
+    font-weight: bolder;
+}
+
+.table-of-contents a:link,
+.table-of-contents a:visited {
+    color: #210934;
+}
+
+.table-of-contents a:hover,
+.table-of-contents a:active {
+    color: #700CBC;
+    font-weight: bolder;
 }

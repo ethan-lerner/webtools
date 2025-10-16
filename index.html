@@ -23,26 +23,31 @@
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
-    <nav style="text-align: center;">
-        <a href="about-me.html" title="More About Me" class="nav-bar">More About Me</a> |
-        <a href="contact-me.html" title="Contact Me" class="nav-bar">Contact Me</a>
+    <nav class="nav-bar">
+        <a href=""><title>Home</title>Home</a> |
+        <a href="about-me.html" title="More About Me">More About Me</a>  |
+        <a href="contact-me.html" title="Contact Me">Contact Me</a> |
+        <a href=""><title>Projects</title>Projects</a>
     </nav>
-    <header>
+    <img src="images/logo-sm.png" alt="logo" class="logo">
+    <header class="page-header">
         <h1>Welcome to my website!</h1>
     </header>
 
-    <main>
+    <aside id="table-of-contents" class="table-of-contents bordered-box">
         <h2>Contents</h2>
-        <nav>
-            <ul>
-                <li><a href="#about-me" class="nav-link">About Me</a></li>
-                <li><a href="#developer-identity" class="nav-link">Developer Identity</a></li>
-                <li><a href="#learning-journey" class="nav-link">Learning Journey</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#developer-identity">Developer Identity</a></li>
+            <li><a href="#learning-journey">Learning Journey</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
         <section>
             <h3 id="about-me">About Me</h3>
             <p>
@@ -52,21 +57,24 @@
                 science, specifically software development, where I discovered just how much I love coding and
                 programming!
             </p>
-            <p>
-                Speaking of high school, I
-                attended Richardson High School and was in the robotics magnet there. Don't let the name of that magnet
-                fool you as it was less robotics as it was manufacturing, much to my disappointment. Despite my
-                expectations being a little let down, the magnet was still very valuable as it helped to shape the way I
-                view problems presented to me, and as such, when I am presented with a problem I attempt to break it
-                down into managable pieces as to not overwhelm myself and mke the issue worse.
-            </p>
-            <figure>
-                <a href="images/Richardson_High_School_main_entrance-og.jpg" target="_blank">
-                    <img src="images/Richardson_High_School_main_entrance-sm.jpg"
-                        alt="Front entrace to Richardson High School">
-                </a>
-                <figcaption>Richardon High School main entrance.</figcaption>
-            </figure>
+            <div class="clearfix bordered-box">
+                <figure class="figure-right">
+                    <a href="images/Richardson_High_School_main_entrance-og.jpg" target="_blank">
+                        <img src="images/Richardson_High_School_main_entrance-sm.jpg"
+                            alt="Front entrace to Richardson High School">
+                    </a>
+                    <figcaption>Richardon High School main entrance.</figcaption>
+                </figure>
+                <h4>High School</h4>
+                <p>
+                    Speaking of high school, I
+                    attended Richardson High School and was in the robotics magnet there. Don't let the name of that magnet
+                    fool you as it was less robotics as it was manufacturing, much to my disappointment. Despite my
+                    expectations being a little let down, the magnet was still very valuable as it helped to shape the way I
+                    view problems presented to me, and as such, when I am presented with a problem I attempt to break it
+                    down into managable pieces as to not overwhelm myself and mke the issue worse.
+                </p>
+            </div>
         </section>
 
         <section>
@@ -79,42 +87,48 @@
                 like to break down problems presented to me into pieces to give myself a broader view of what is being
                 asked of me.
             </p>
-            <p>
-                <em>"A journey of a thousand miles begins with a single step."</em> A quote that I try to live by in
-                my development process as, in my eyes, any progress is better than no progress. Even if you have to go
-                back later and change what you added or fully delete your progress, you still made that first step and
-                put something down.
-            </p>
-            <figure>
-                <a href="images/stone-steps-og.jpg" target="_blank">
-                    <img src="images/stone-steps-sm.jpg" alt="Stone Steps surrounded by plantlife">
-                </a>
-                <figcaption>Ascending stone steps.</figcaption>
-            </figure>
+            <div class="clearfix bordered-box">
+                <figure class="figure-right">
+                    <a href="images/stone-steps-og.jpg" target="_blank">
+                        <img src="images/stone-steps-sm.jpg" alt="Stone Steps surrounded by plantlife">
+                    </a>
+                    <figcaption>Ascending stone steps.</figcaption>
+                </figure>
+                <h4>One Step at a Time</h4>
+                <p>
+                    <em>"A journey of a thousand miles begins with a single step."</em> A quote that I try to live by in
+                    my development process as, in my eyes, any progress is better than no progress. Even if you have to go
+                    back later and change what you added or fully delete your progress, you still made that first step and
+                    put something down.
+                </p>
+            </div>
         </section>
-
+        
         <section>
             <h3 id="learning-journey">Learning Journey</h3>
-            <p>
-                My journey into programming has definitely been a long and winding one as this path was not what I
-                started down. As stated above, I started down the path of mechanical engineering and even attended a
-                full year of schooling with mechanical engineering as my major. Clearly that school and major did not
-                turn out otherwise I would not be writing this and you would not be reading this.
-            </p>
-            <p>
-                After that year I took
-                a gap year to kind of figure out what exactly I wanted to do. I took a couple online classes that ended
-                up going nowhere but got me interested in programming as a whole so I decided that I had been sitting
-                doing nothing for long enough and enrolled for some classes at Dallas College. It was definitely
-                daunting to go back to school but it was a good change for me as it provided structure to an otherwise
-                unstructured day.
-            </p>
-            <figure>
-                <a href="images/winding-road-og.jpg" target="_blank">
-                    <img src="images/winding-road-sm.jpg" alt="A winding road in the woods">
-                </a>
-                <figcaption>A wooded winding road.</figcaption>
-            </figure>
+            <div class="clearfix bordered-box">
+                <figure class="figure-left">
+                    <a href="images/winding-road-og.jpg" target="_blank">
+                        <img src="images/winding-road-sm.jpg" alt="A winding road in the woods">
+                    </a>
+                    <figcaption>A wooded winding road.</figcaption>
+                </figure>
+                <h4>Finding my Path</h4>
+                <p>
+                    My journey into programming has definitely been a long and winding one as this path was not what I
+                    started down. As stated above, I started down the path of mechanical engineering and even attended a
+                    full year of schooling with mechanical engineering as my major. Clearly that school and major did not
+                    turn out otherwise I would not be writing this and you would not be reading this.
+                </p>
+                <p>
+                    After that year I took
+                    a gap year to kind of figure out what exactly I wanted to do. I took a couple online classes that ended
+                    up going nowhere but got me interested in programming as a whole so I decided that I had been sitting
+                    doing nothing for long enough and enrolled for some classes at Dallas College. It was definitely
+                    daunting to go back to school but it was a good change for me as it provided structure to an otherwise
+                    unstructured day.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
