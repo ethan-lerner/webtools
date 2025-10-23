@@ -9,6 +9,13 @@ html, body, * {
     margin: 0 27vw 0 8vw;
 }
 
+.main-contact {
+    padding: 1rem;
+    width: 73vw;
+    max-width: 960px;
+    margin: auto;
+}
+
 .table-of-contents {
     position: sticky;
     top: 65px;

@@ -1,6 +1,7 @@
 /*
 #F6ECFE very light
 #F4E7FD not quite as light but still very light
+#e9d0fb a nice happy medium
 #A33AF2 fuschia
 #700CBC violet
 #36065B dark purple
@@ -122,4 +123,100 @@ img {
 .table-of-contents a:active {
     color: #700CBC;
     font-weight: bolder;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    font-weight: bold;
+    font-size: .9rem;
+    width: auto;
+    margin: .5rem 0 .5rem;
+    border: #A33AF2;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+    font-weight: bold;
+    font-size: .9rem;
+    width: auto;
+    margin: .5rem 0 .5rem;
+    border: #A33AF2;
+    border-radius: 3px;
+    padding: .5rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: inline;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    margin: .5rem, 0 .5rem;
+    color: #F6ECFE;
+    background-color: #700CBC;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #210934;
+}
+
+label,
+legend {
+    font-weight: bold;
+    color: #210934;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+fieldset {
+    border-radius: 5px;
+    border-color: #700CBC;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: thin solid #210934;
+}
+
+table caption {
+    font-weight: 800;
+    font-size: 1.75em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #F6ECFE;
+    background-color: #36065b;
+    padding: .5em;
+}
+
+thead tr {
+    background-color: #700CBC;
+    color: #F6ECFE;
+}
+
+th {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #210934;
+    text-align: left;
+    padding: 8px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e9d0fb;
 }
