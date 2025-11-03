@@ -28,16 +28,14 @@
 
 <body>
     <nav class="nav-bar">
-        <a href="index.html" title="Home">Home</a> |
-        <a href="about-me.html" title="About Me">More About Me</a> |
-        <a href="">
-            <title>Contact Me</title>Contact Me
-        </a> |
-        <a href="">
-            <title>Projects</title>Projects
-        </a>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">More About Me</a>
+        <a href="">Contact Me</a>
+        <a href="">Projects</a>
+        <a href="team.html">Meet the Team</a>
+        <a href="#" class="sign-in">Sign In</a>
     </nav>
-    <img src="images/logo-sm.png" alt="logo" class="logo">
+    <img src="images/logo-sm.png" alt="website logo" class="logo">
     <header class="page-header">
         <h1>Contact Me</h1>
     </header>
@@ -47,16 +45,16 @@
             <legend>Contact Me</legend>
             <form action="success.html" method="get" class="contact-form">
                 <label for="name" title="Enter your full name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="name" id="name" placeholder="Name" required>
 
                 <label for="email" title="Enter your email address">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required>
 
                 <label title="Select Subject">Subject of Contact</label>
-                <select name="subjectid">
+                <select name="subjectid" required>
                     <option value="">Select Subject</option>
                     <option value="1">Question</option>
                     <option value="2">Comment</option>
@@ -66,7 +64,7 @@
 
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="6" cols="60"
-                    placeholder="Enter your message here..."></textarea>
+                    placeholder="Enter your message here..." required></textarea>
 
                 <label for="subscribe" title="Select to Subscribe to Newsletter">Subscribe to Newsletter?</label>
                 <input type="checkbox" id="subscribe" name="subscribe">
@@ -82,12 +80,34 @@
         </fieldset>
     </main>
 
-    <footer>
-        &COPY; 2025 Ethan Lerner
-        <a href="https://www.dallascollege.edu/pages/" target="_blank" title="Dallas College Home Page">Dallas
-            College</a> |
-        <a href="mailto:ethan.lerner.18@gmail.com" target="_blank" title="Email Me">Webmaster</a> |
-        <a href="https://github.com/ethan-lerner/" target="_blank" title="My Github">Github</a>
+    <footer class="site-footer">
+        <div>
+            <h3 class="footer-heading">Resources</h3>
+            <ul class="footer-content-right">
+                <li><a href="https://www.dallascollege.edu/pages/" target="_blank" title="Dallas College Home Page">Dallas College</a></li>
+                <li><a href="https://github.com/ethan-lerner/" target="_blank" title="My Github">Github</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3 class="footer-heading">&COPY; 2025 Ethan Lerner</h3>
+            <ul>
+                <li><a href="mailto:ethan.lerner.18@gmail.com" target="_blank" title="Email Me">Webmaster</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3 class="footer-heading">Nav Links</h3>
+            <nav>
+                <ul class="footer-content-right">
+                    <li><a href="index.html" class="nav-bar">Home</a></li>
+                    <li><a href="about-me.html" class="nav-bar">More About Me</a></li>
+                    <li><a href="" class="nav-bar">Contact Me</a></li>
+                    <li><a href="" class="nav-bar">Projects</a></li>
+                    <li><a href="team.html" class="nav-bar">Meet the Team</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 

@@ -88,6 +88,15 @@ footer {
     padding: 2rem;
     text-align: center;
     color: #F6ECFE;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-heading {
+    color: #F6ECFE;
+}
+
+.footer-content-right {
+    text-align: right;
 }
 
 ul {
@@ -112,6 +121,7 @@ img {
 .nav-bar a:active {
     color: #F6ECFE;
     font-weight: bolder;
+    background-color: #36065b;
 }
 
 .table-of-contents a:link,
