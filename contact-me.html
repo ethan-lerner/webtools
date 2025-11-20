@@ -22,41 +22,43 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <nav class="nav-bar">
-        <a href="index.html">Home</a>
-        <a href="about-me.html">More About Me</a>
-        <a href="">Contact Me</a>
-        <a href="">Projects</a>
-        <a href="team.html">Meet the Team</a>
-        <a href="products.html">Products</a>
+        <a href="index.html">Home | <i class="fa fa-home"></i></a>
+        <a href="about-me.html">More About Me | <i class="fa fa-address-card"></i></a>
+        <a href="">Contact Me | <i class="fa fa-at"></i></a>
+        <a href="">Projects | <i class="fa fa-code"></i></a>
+        <a href="team.html">Meet the Team | <i class="fa fa-address-book"></i></a>
+        <a href="products.html">Products | <i class="fa fa-tag"></i></a>
         <a href="#" class="sign-in">Sign In</a>
     </nav>
     <img src="images/logo-sm.png" alt="website logo" class="logo">
     <header class="page-header">
-        <h1>Contact Me</h1>
+        <h1 class="page-header">Contact Me</h1>
     </header>
     <main class="main-contact">
         <fieldset>
             <h2>Need To Contact Me?</h2>
             <legend>Contact Me</legend>
             <form action="success.html" method="get" class="contact-form">
-                <label for="name" title="Enter your full name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="label">Name</label>
+                <input class="w3-input" type="text" id="label" style="width:30%" placeholder="Name" required>
 
-                <label for="email" title="Enter your email address">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <label for="email">E-mail</label>
+                <input class="w3-input" type="email" id="email" placeholder="E-mail" style="width:30%" required>
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required>
+                <input class="w3-input" type="tel" name="phone" id="phone" placeholder="123-456-7890" style="width:30%" required>
 
-                <label title="Select Subject">Subject of Contact</label>
-                <select name="subjectid" required>
-                    <option value="">Select Subject</option>
+                <label for="subjectid">Subject of Contact</label>
+                <select class="w3-select" name="subjectid" id="subjectid" style="width:30%" required>
+                    <option value="" disabled selected>Select Subject</option>
                     <option value="1">Question</option>
                     <option value="2">Comment</option>
                     <option value="3">Bug Report</option>
@@ -65,18 +67,21 @@
 
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="6" cols="60"
-                    placeholder="Enter your message here..." required></textarea>
+                    placeholder="Enter your message here..." style="width:50%" required></textarea>
 
                 <label for="subscribe" title="Select to Subscribe to Newsletter">Subscribe to Newsletter?</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
-
+                <input class="w3-check" type="checkbox" id="subscribe" name="subscribe">
+                
                 <p>
-                    <label><input type="radio" name="contactmethod" value="email">Email</label>
-                    <label><input type="radio" name="contactmethod" value="phone">Phone</label>
+                    <input class="w3-radio" type="radio" id="email-radio-button" name="contactmethod" value="email">
+                    <label for="email-radio-button">Email</label>
+                
+                    <input class="w3-radio" type="radio" id="phone-radio-button" name="contactmethod" value="phone">
+                    <label for="phone-radio-button">Phone</label>
                 </p>
 
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
+                <input class="w3-btn" type="submit" value="Submit">
+                <input class="w3-btn" type="reset" value="Reset">
             </form>
         </fieldset>
     </main>
@@ -84,28 +89,30 @@
     <footer class="site-footer">
         <div>
             <h3 class="footer-heading">Resources</h3>
-            <ul class="footer-content-right">
-                <li><a href="https://www.dallascollege.edu/pages/" target="_blank" title="Dallas College Home Page">Dallas College</a></li>
+            <ul class="footer-content-left w3-ul">
+                <li><a href="https://www.dallascollege.edu/pages/" target="_blank"
+                        title="Dallas College Home Page">Dallas College</a></li>
                 <li><a href="https://github.com/ethan-lerner/" target="_blank" title="My Github">Github</a></li>
             </ul>
         </div>
-        
+
         <div>
             <h3 class="footer-heading">&COPY; 2025 Ethan Lerner</h3>
             <ul>
                 <li><a href="mailto:ethan.lerner.18@gmail.com" target="_blank" title="Email Me">Webmaster</a></li>
             </ul>
         </div>
-        
+
         <div>
             <h3 class="footer-heading">Nav Links</h3>
             <nav>
-                <ul class="footer-content-right">
+                <ul class="footer-content-right w3-ul">
                     <li><a href="index.html" class="nav-bar">Home</a></li>
                     <li><a href="about-me.html" class="nav-bar">More About Me</a></li>
                     <li><a href="" class="nav-bar">Contact Me</a></li>
                     <li><a href="" class="nav-bar">Projects</a></li>
                     <li><a href="team.html" class="nav-bar">Meet the Team</a></li>
+                    <li><a href="products.html" class="nav-bar">Products</a></li>
                 </ul>
             </nav>
         </div>
