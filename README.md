@@ -39,6 +39,10 @@ Drummond Phlox: Photo by <a href="/photographer/borsuk23-64527">borsuk23</a> on 
 >
 > - Success.html schedule table; using default table-all and default hoverable tag  
 
+> ### About Me <a href="https://www.w3schools.com/w3css/w3css_templates.asp">w3schools.com</a>  
+>
+> - CV Template
+
 ## Personal Thoughts
 
 W3.CSS, to me, is a very valuable tool and library to aid in my own development of my site. I like how professional and clean most of the default styles are for the items available.
